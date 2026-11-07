@@ -328,7 +328,7 @@ public class Main {
 
             int duration;
             // EXCEPTION HANDLING
-            // To prevent invalid text from crashing the reservation action.
+            // To prevent invalid text from crashing the reservation.
             try {
                 duration = Integer.parseInt(durationField.getText().trim());
                 if (duration <= 0) {
