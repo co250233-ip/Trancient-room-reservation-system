@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 // Parent Class (Inheritance)
 class Room {
-    // Encapsulation (Private fields to protect room data)
+    // Encapsulation (Private fields to protect the room data)
     private String roomNumber;
     private double pricePer24Hours;
     private int maxAdults;
@@ -47,7 +47,7 @@ class Room {
     }
 }
 
-// Standard room (Inherits from Room)
+// Standard room (Inherits from class Room)
 class StandardRoom extends Room {
     public StandardRoom(String roomNumber) {
         // Passing room number, ₱900 price, 2 adults, and 1 child capacity
@@ -124,7 +124,7 @@ public class TransientReservationConsole {
         List<Room> rooms = new ArrayList<>();
         List<Reservation> reservations = new ArrayList<>();
 
-        // Automatically create all 13 Standard Rooms (Room 1 to Room 13)
+        // Automatically create all 13 Rooms (Room 1 to Room 13)
         for (int i = 1; i <= 13; i++) {
             rooms.add(new StandardRoom(String.valueOf(i)));
         }
